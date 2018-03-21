@@ -26,6 +26,7 @@ function operacion() {
       document.getElementById("views5").innerHTML = step5;
       document.getElementById("views6").innerHTML = step6;
       document.getElementById("views7").innerHTML = step7;
+
     }
   document.getElementById('show').style.display = "block";
 }

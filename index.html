@@ -6,7 +6,8 @@
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </script>
-    <title>Matematica</title>
+    <title>Sistemas Lineales</title>
+    <link rel="shortcut icon" href="img/m.ico">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -16,17 +17,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul id="menu" class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Home
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Sistemas Lineales</a>
-              <a class="dropdown-item" href="#">Bascaras</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Sistemas Lineales</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact us</a>
+            <a class="nav-link" href="contact.html">  Nosotros </a>
           </li>
         </ul>
       </div>
@@ -35,12 +30,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <div id="menu_funcion">
-
+      <center>
+      <h3> Solución de sistemas de ecuaciones lineales </h3>
+<p> Ésta página resuelve sistemas de ecuciones lineal dado los coeficientes de los términos. </p> <br>
+<p> Ingrese los coeficientes del sistema en las celdas </p>
       <form name="form" action="" method="get">
-        <center>
         <ul>
           <li class= "ecuacion">
-            <input class="numeros" type="number"  name="x1"> x  +</input>
+            <input class="numeros" type="number"  name="x1" > x  +</input>
             <input class="numeros" type="number"  name="y1" > y  = </input>
             <input class="numeros" type="number"  name="r1" >
           </li>
@@ -52,33 +49,35 @@
           </li>
         </ul>
       </center>
-
       </form>
       <center><button class="boton" onclick="operacion()">Resolver</button></center>
     </div>
     <br>
     <div id="show" style="display:none">
-      <center>
       <form id="hola" name="hola">
+        <center>
         <input id="x" type="text" name="x" value="" readonly> = x </input>
         <input id="y" type="text" name="y" value="" readonly> = y </input>
+      </center>
         <br>
         <br>
-        <div id="views1"></div>
-        <br>
-        <div id="views2"></div>
-        <br>
-        <div id="views3"></div>
-        <br>
-        <div id="views4"></div>
-        <br>
-        <div id="views5"></div>
-        <br>
-        <div id="views6"></div>
-        <br>
-        <div id="views7"></div>
+        <div class="pasos">
+          <div id="titulo"><h1>Planteamiento:</h1></div>
+          <div id="views1"></div>
+          <br>
+          <div id="views2"></div>
+          <br>
+          <div id="views3"></div>
+          <br>
+          <div id="views4"></div>
+          <br>
+          <div id="views5"></div>
+          <br>
+          <div id="views6"></div>
+          <br>
+          <div id="views7"></div>
+      </div>
       </form>
-    </center>
     </div>
   </body>
 </html>

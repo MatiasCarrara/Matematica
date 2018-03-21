@@ -4,12 +4,9 @@
 #logo{
   width: 4%;
 }
-.card-deck{
-  margin-top: 20%;
-}
 
 .numeros {
-      width: 45px;
+  width: 45px;
 }
 
 .boton {
@@ -22,9 +19,41 @@
 }
 ul {
   padding: 0px;
-  width: 15%;
+  width: 45%;
 }
 
 .ecuacion {
   list-style: none;
+}
+.pasos {
+  margin: 8%;
+}
+.inputs{
+  border-style:solid;
+  border:1px;
+  border-color: red;
+
+}
+
+#h3{
+  margin: 2% 1% 2% 2%;
+}
+
+.names{
+  font-family: 'Abril Fatface', cursive;
+}
+
+#Emily {
+  background-color: #8d191b;
+  color:white;
+}
+
+#Carrara {
+  background-color: #817d31;
+  color:white;
+}
+
+#Emir {
+  background-color: #f89b1f;;
+  color:white;
 }
