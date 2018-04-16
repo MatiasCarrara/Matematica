@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Explicita</title>
+    <title>Distancia</title>
     <link rel="stylesheet" href="css/css.css">
-    <script src="js/explicita.js"></script>
+
+    <script src="js/distancia.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </script>
   </head>
@@ -34,28 +35,22 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <div class="form-group mx-sm-3 mb-2">
+
+    <form name="form" action="" method="get">
       <center>
-      <h3> Ecuacion explicita a partir de 2 puntos </h3>
-      <p>Esta vista muestra la ecuacion explicita a partir de dos puntos. </p>
-      <form name="form" action="" method="get">
-        <ul>
-          <li class= "ecuacion">
-          punto 1 = (<input class="numeros" type="number"  name="x1" value="2"></input>
-            <input class="numeros" type="number"  name="y1" value="1"></input>)
-          </li>
-          <br>
-          <li class= "ecuacion">
-            punto 2 = (<input class="numeros" type="number"  name="x2" value="-1"></input>
-            <input class="numeros" type="number"  name="y2" value="-5"></input>)
-          </li>
-        </ul>
-        </center>
-      </form>
-    </div>
+      <ul>
+        <li class= "ecuacion">
+          (<input class="numeros" type="number"  name="x1" value="1"></input>
+          <input class="numeros" type="number"  name="y1" value="5"></input>)
+        </li>
+        <br>
+        <li class= "ecuacion">
+          (<input class="numeros" type="number"  name="x2" value="4"></input>
+          <input class="numeros" type="number"  name="y2" value="1"></input>)
+        </li>
+      </ul>
+      </center>
+    </form>
     <center><button class="boton" onclick="here()">Resolver</button></center>
-    <br>
-    <br>
-    <center><div id="show"></div></center>
   </body>
 </html>

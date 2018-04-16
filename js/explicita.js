@@ -8,10 +8,10 @@ function here() {
   var n = (y1 - (m * x1));
 
   if (n >= 0) {
-    var text = "y=" + m.toFixed(2) + "x +" + n.toFixed(2) + "" ;
+    var text = "y = " + m.toFixed(2) + "x +" + n.toFixed(2) + "" ;
     document.getElementById("show").innerHTML = text;
   }else {
-    var text = "y=" + m.toFixed(2) + "x " + n.toFixed(2) + "" ;
+    var text = "y = " + m.toFixed(2) + "x " + n.toFixed(2) + "" ;
     document.getElementById("show").innerHTML = text;
   }
 }

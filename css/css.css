@@ -1,27 +1,23 @@
 #menu{
-  margin-left: 925px;
+  margin-left: 815px;
 }
 #logo{
   width: 4%;
 }
-
 .numeros {
   width: 45px;
 }
-
 .boton {
   background-color: #8d191b;
   border-radius: 5px;
   border-bottom-color: #f89b1f;
   color: white;
   padding: 0px;
-
 }
 ul {
   padding: 0px;
   width: 45%;
 }
-
 .ecuacion {
   list-style: none;
 }
@@ -32,27 +28,21 @@ ul {
   border-style:solid;
   border:1px;
   border-color: red;
-
 }
-
 #h3{
   margin: 2% 1% 2% 2%;
 }
-
 .names{
   font-family: 'Abril Fatface', cursive;
 }
-
 #Emily {
   background-color: #8d191b;
   color:white;
 }
-
 #Carrara {
   background-color: #817d31;
   color:white;
 }
-
 #Emir {
   background-color: #f89b1f;;
   color:white;
