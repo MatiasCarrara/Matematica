@@ -5,24 +5,6 @@ function here() {
   var y2 = document.getElementsByName("y2")[0].value;
 
   var here = (((y2 - y1) * (y2 - y1)) + ((x2 -x1)*(x2 -x1)));
-  var hola = Math.sqrt(here)
-  alert(hola);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  var hola = "La distancia es: " + Math.sqrt(here)
+  document.getElementById("show").innerHTML = hola;
 }
