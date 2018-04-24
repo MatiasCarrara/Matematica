@@ -2,12 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Explicita</title>
     <link rel="stylesheet" href="css/css.css">
-    <script src="js/index.js"></script>
+    <script src="js/explicita.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </script>
-    <title>Sistemas Lineales</title>
-    <link rel="shortcut icon" href="img/m.ico">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -32,55 +31,30 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <div id="menu_funcion">
+    <div class="form-group mx-sm-3 mb-2">
       <center>
-      <h3> Solución de sistemas de ecuaciones lineales </h3>
-      <p> Ésta página resuelve sistemas de ecuciones lineal dado los coeficientes de los términos. </p> <br>
-      <p> Ingrese los coeficientes del sistema en las celdas </p>
+      <h3> Ecuacion explicita a partir de 2 puntos </h3>
+      <p>Esta vista muestra la ecuacion explicita a partir de dos puntos. </p><br>
       <form name="form" action="" method="get">
         <ul>
           <li class= "ecuacion">
-            <input class="numeros" type="number"  name="x1" > x  +</input>
-            <input class="numeros" type="number"  name="y1" > y  = </input>
-            <input class="numeros" type="number"  name="r1" >
+          punto 1 = (<input class="numeros" type="number"  name="x1" value="2"></input>
+            <input class="numeros" type="number"  name="y1" value="1"></input>)
           </li>
           <br>
           <li class= "ecuacion">
-            <input class="numeros" type="number"  name="x2" >  x  +</input>
-            <input class="numeros" type="number"  name="y2" >  y  = </input>
-            <input class="numeros" type="number"  name="r2" >
+            punto 2 = (<input class="numeros" type="number"  name="x2" value="2"></input>
+            <input class="numeros" type="number"  name="y2" value="-5"></input>)
           </li>
         </ul>
-      </center>
+        </center>
       </form>
-      <center><button class="boton" onclick="operacion()">Resolver</button></center>
     </div>
+    <center><button class="boton" onclick="here()">Resolver</button></center>
     <br>
-    <div id="show" style="display:none">
-      <form id="hola" name="hola">
-        <center>
-        <input id="x" type="text" name="x" value="" readonly> = x </input>
-        <input id="y" type="text" name="y" value="" readonly> = y </input>
-      </center>
-        <br>
-        <br>
-        <div class="pasos">
-          <div id="titulo"><h1>Planteamiento:</h1></div>
-          <div id="views1"></div>
-          <br>
-          <div id="views2"></div>
-          <br>
-          <div id="views3"></div>
-          <br>
-          <div id="views4"></div>
-          <br>
-          <div id="views5"></div>
-          <br>
-          <div id="views6"></div>
-          <br>
-          <div id="views7"></div>
-      </div>
-      </form>
-    </div>
+    <br>
+    <center><div id="show"></div></center>
+    <center><div id="here"></div></center>
+    <center><div id="hola"></div></center>
   </body>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Distancia</title>
+    <link rel="stylesheet" href="css/css.css">
+
+    <script src="js/distancia.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img id="logo" src="img\m.png" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul id="menu" class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="explicita.html"> Ecuacion Explicita </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Sistemas Lineales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="distancia.html"> Distancia </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <center>
+    <h3> Resuelve la distancia entre dos puntos </h3>
+    <p> Esta vista resuelve la distancia existente entre dos puntos. </p><br>
+    <form name="form" action="" method="get">
+      <ul>
+        <li class= "ecuacion">
+          (<input class="numeros" type="number"  name="x1" value="1"></input>
+          <input class="numeros" type="number"  name="y1" value="5"></input>)
+        </li>
+        <br>
+        <li class= "ecuacion">
+          (<input class="numeros" type="number"  name="x2" value="4"></input>
+          <input class="numeros" type="number"  name="y2" value="1"></input>)
+        </li>
+      </ul>
+      </center>
+    </form>
+    <center><button class="boton" onclick="here()">Resolver</button></center>
+    <br>
+    <br>
+    <center><div id="show"></div></center>
+  </body>
+</html>

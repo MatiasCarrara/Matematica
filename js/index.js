@@ -15,10 +15,10 @@ function operacion() {
       var step1 = "Paso 1: vamos a despejar la x, para esto multiplicamos toda la primera funcion por la x de la segunda, y viseversa. -->  (" + x1 + " * " + x2 + ") ___ (" + y1 + " * " + x2 + ") ___ (" + r1 + " * " + x2 + ") y (" + x2 + " * " + x1 + ") ___ (" + y2 + " * " + x1 + ") ___ (" + r2 + " * " + x1 + ")" ;
       var step2 = "Paso 2: restamos las funciones (funcion 1 - funcion 2). -->  (" + (x1 * x2) + " - " + (x2 * x1) + ") ___ (" +(y1 * x2)+ " - " +(y2 * x1)+ ") ___ (" +(r1 * x2)+ " - " +(r2 * x1)+ ")";
       var step3 = "Paso 3: pasamos el multiplicador de Y, dividiendo el resultado ('=') de la funcion. -->  (" + ((r1 * x2) - (r2 * x1)) + " / " + ((y1 * x2) - (y2 * x1)) + ")" ;
-      var step4 = "Paso 4: deducimos que la Y es igual a " + y + ". --> Y = " + y + "";
-      var step5 = "Paso 5: sustituimos la y de una de las funciones por: " + y + ". --> (" + y1 + " * " + y + ")";
-      var step6 = "Paso 6: le restamos a X el resultado de la multiplicacion anterior. --> " + r1 + " - " + (y1 * y) + "";
-      var step7 = "Paso 7: deducimos que X es igual a " + x + ". --> X = " + x + "";
+      var step4 = "Paso 4: deducimos que la Y es igual a " + y.toFixed(2) + ". --> Y = " + y.toFixed(2) + "";
+      var step5 = "Paso 5: sustituimos la y de una de las funciones por: " + y.toFixed(2) + ". --> (" + y1 + " * " + y.toFixed(2) + ")";
+      var step6 = "Paso 6: le restamos a X el resultado de la multiplicacion anterior. --> " + r1 + " - " + (y1 * y.toFixed(2)) + "";
+      var step7 = "Paso 7: deducimos que X es igual a " + x.toFixed(2) + ". --> X = " + x.toFixed(2) + "";
       document.getElementById("views1").innerHTML = step1;
       document.getElementById("views2").innerHTML = step2;
       document.getElementById("views3").innerHTML = step3;
